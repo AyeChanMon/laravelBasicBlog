@@ -24,3 +24,4 @@ Route::get("form-delete/{id}","FormController@destroy")->name("form.destroy");
 Route::get("form-edit/{id}","FormController@edit")->name('form.edit');
 Route::post("form-update/{id}","FormController@update")->name('form.update');
 Route::view("/denied","denied")->name("denied");
+Route::resource("student","StudentController");
